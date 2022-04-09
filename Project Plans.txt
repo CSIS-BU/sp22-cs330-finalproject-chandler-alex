@@ -1,0 +1,8 @@
+Team Members: Chandler Wesoloski, Alex Mattingly, Colin Gamagami
+
+Project Plan: Make a multiplayer rock,paper,scissors game using socket programming in our programming language of choice.
+The project will have 2 players who connect to a server, and the server hosts the game of rock,paper,scissors between the two clients.
+The clients will choose rock, paper, or scissors and that will be sent to the server, and the server will then compare the results and
+determine a winner.
+
+Programming Language: TBD
