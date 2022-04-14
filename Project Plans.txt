@@ -6,3 +6,8 @@ The clients will choose rock, paper, or scissors and that will be sent to the se
 determine a winner.
 
 Programming Language: C#
+
+Plan for designing the code
+Colin - Client code
+Alex - Rock Paper Scisors Logic
+Chandler - Server code
