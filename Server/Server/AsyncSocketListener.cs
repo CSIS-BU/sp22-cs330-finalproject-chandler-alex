@@ -172,7 +172,23 @@ namespace Server
             {
                 return "You Lose!";
             }
+            else if (ClientMsg.Contains("Rock") && ServerMSG == "Paper")
+            {
+                return "You Lose!";
+            }
+            else if (ClientMsg.Contains("Paper") && ServerMSG == "Scisors")
+            {
+                return "You Lose!";
+            }
             else if(ClientMsg.Contains("Scissors") && ServerMSG == "Paper")
+            {
+                return "You Win!";
+            }
+            else if (ClientMsg.Contains("Paper") && ServerMSG == "Rock")
+            {
+                return "You Win!";
+            }
+            else if (ClientMsg.Contains("Rock") && ServerMSG == "Scissors")
             {
                 return "You Win!";
             }
