@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -105,7 +106,7 @@ namespace Server
                     Console.WriteLine("Read {0} bytes from socket. \nData: {1}", content.Length, content);
 
                     //Echo the data back to the client
-                    Send(handler, content);
+                    Send(handler, CliWinRPS(content));
                 }
                 else
                 {
@@ -141,6 +142,43 @@ namespace Server
             catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+            }
+        }
+
+        private static string RPSAI()
+        {
+            Random rand = new Random();
+            int randNum = rand.Next(0, 3);
+
+
+            switch (randNum)
+            {
+                case 0:
+                    return "Rock";
+                case 1:
+                    return "Paper";
+                case 2:
+                    return "Scissors";
+                default:
+                    return "Rock";
+            }
+        }
+
+        private static string CliWinRPS(string ClientMsg)
+        {
+             string ServerMSG = RPSAI();
+
+            if (ClientMsg.Contains("Scissors") && ServerMSG == "Rock")
+            {
+                return "You Lose!";
+            }
+            else if(ClientMsg.Contains("Scissors") && ServerMSG == "Paper")
+            {
+                return "You Win!";
+            }
+            else
+            {
+                return "It's a Tie!";
             }
         }
 
