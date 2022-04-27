@@ -10,21 +10,30 @@ namespace Client
             int choice;
             String choiceString;
             string input = "";
+            bool valid=false;
 
-            Console.WriteLine("Enter the number of your choice:\n1. Rock\n2. Paper\n3. Scisors\n");
-            input = Console.ReadLine();
+            do
+            {
+                Console.WriteLine("Enter the number of your choice:\n1. Rock\n2. Paper\n3. Scisors\n");
+                input = Console.ReadLine();
 
-            choice = Convert.ToInt32(input);
+                choice = Convert.ToInt32(input);
 
-            if (choice == 1)
-                return "Rock<EOF>";
-            else if (choice == 2)
-                return "Paper<EOF>";
-            else if (choice == 3)
-                return "Scissors<EOF>";
-            else
-                return "Invalid Choice";
+                if (choice == 1)
+                {
+                    return "Rock<EOF>";
+                }
+                else if (choice == 2)
+                {
+                    return "Paper<EOF>";
+                }
+                else if (choice == 3)
+                {
+                    return "Scissors<EOF>";
+                }
+                else
+                    Console.WriteLine("Invalid input try again\n")
+            } while(!true)
         }
-        
     }
 }
