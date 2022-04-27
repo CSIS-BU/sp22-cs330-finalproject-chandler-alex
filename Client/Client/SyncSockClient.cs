@@ -66,8 +66,6 @@ namespace Client
         public static int Main(string[] args)
         {
             string input = "";
-            string gameInput = "Scissors";
-            bool continuePlaying = false;
 
 
             Console.WriteLine("Type in the port you want use to connect...");
@@ -76,21 +74,12 @@ namespace Client
 
             do
             {
-                StartClient(gameInput);
-                Console.WriteLine("Would you like to play again?");
+                //Pass in Method from game-play input
+                StartClient();
+                Console.WriteLine("Would you like to play again? Type Y to continue playing");
                 input = Console.ReadLine();
 
-                if (input == "YES" || input == "yes" || input == "Yes")
-                {
-                    continuePlaying = true;
-                }
-                else
-                {
-                    continuePlaying = false;
-                }
-
-
-            } while (continuePlaying == true);
+            } while (input == "y" || input =="Y");
 
             Console.ReadKey();
             return 0;
