@@ -8,13 +8,12 @@ namespace Client
         public static string Choice()
         {
             int choice;
-            String choiceString;
             string input = "";
-            bool valid=false;
+            bool isValid=false;
 
             do
             {
-                Console.WriteLine("Enter the number of your choice:\n1. Rock\n2. Paper\n3. Scisors\n");
+                Console.WriteLine("Enter the number of your choice:\n1. Rock\n2. Paper\n3. Scissors\n");
                 input = Console.ReadLine();
 
                 choice = Convert.ToInt32(input);
@@ -32,8 +31,14 @@ namespace Client
                     return "Scissors<EOF>";
                 }
                 else
-                    Console.WriteLine("Invalid input try again\n")
-            } while(!true)
+                {
+                    Console.WriteLine("Invalid input please try again!\n");
+                    isValid = false;
+                }
+                
+            } while (isValid == false);
+
+            return "<EOF>";
         }
     }
 }
