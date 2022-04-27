@@ -50,7 +50,7 @@ namespace Server
                     allDone.Reset();
 
                     //Start an asynchronous socket to listen for connections.
-                    Console.WriteLine("Hosting on Port: {0}\nWaiting for a connection...", port);
+                    Console.WriteLine("Hosting on IP: {0} and Port: {1}\nWaiting for a connection...",iPAddress, port);
                     listener.BeginAccept(new AsyncCallback(AcceptCallback), listener);
 
                     //Wait until a connection is made before continuing

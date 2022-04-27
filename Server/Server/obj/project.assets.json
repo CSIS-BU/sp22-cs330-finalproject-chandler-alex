@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\Server.csproj",
+      "projectPath": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\cweso\\.nuget\\packages\\",
-      "outputPath": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\obj\\",
+      "outputPath": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cweso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
