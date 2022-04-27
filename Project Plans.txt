@@ -11,3 +11,5 @@ Plan for designing the code
 Colin - Client code
 Alex - Rock Paper Scisors Logic
 Chandler - Server code
+----------------------------------------------------------------------------------------------------------------------------------------
+4/27 We met in person to finalize the project and record the presentation for our project
