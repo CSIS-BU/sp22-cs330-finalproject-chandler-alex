@@ -7,18 +7,19 @@ namespace Client
     public class SyncSockClient
     {
         static int port;
+        static string ipAddr;
 
         public static void StartClient(string GameInput)
         {
             //Data buffer for income data
             byte[] bytes = new byte[1024];
-            //string ipAddr = "127.0.0.1";
+
 
             //Try to connect to a remote device
             try
             {
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-                IPAddress ipAddress = ipHostInfo.AddressList[0];
+                IPAddress ipAddress = IPAddress.Parse(ipAddr);
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
 
                 //Create a TCP/IP socket
@@ -66,6 +67,9 @@ namespace Client
         public static int Main(string[] args)
         {
             string input = "";
+
+            Console.WriteLine("Type in the Server's IP address...");
+            ipAddr = Console.ReadLine();
 
 
             Console.WriteLine("Type in the port you want use to connect...");
