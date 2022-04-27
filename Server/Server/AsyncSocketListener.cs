@@ -15,10 +15,10 @@ namespace Server
         public byte[] Buffer = new byte[BufferSize];
 
         //Received data string
-        public StringBuilder sb= new StringBuilder();
+        public StringBuilder sb = new StringBuilder();
 
         //Client Socket
-        public Socket Clisocket = null;
+        public Socket? Clisocket = null;
     }
 
     public class AysncSocketListener
@@ -106,7 +106,7 @@ namespace Server
                     Console.WriteLine("Read {0} bytes from socket. \nData: {1}", content.Length, content);
 
                     //Echo the data back to the client
-                    Send(handler, CliWinRPS(content));
+                    Send(handler, RockPaperScissorsAI.CliWinRPS(content));
                 }
                 else
                 {
@@ -142,59 +142,6 @@ namespace Server
             catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-            }
-        }
-
-        private static string RPSAI()
-        {
-            Random rand = new Random();
-            int randNum = rand.Next(0, 3);
-
-
-            switch (randNum)
-            {
-                case 0:
-                    return "Rock";
-                case 1:
-                    return "Paper";
-                case 2:
-                    return "Scissors";
-                default:
-                    return "Rock";
-            }
-        }
-
-        private static string CliWinRPS(string ClientMsg)
-        {
-             string ServerMSG = RPSAI();
-
-            if (ClientMsg.Contains("Scissors") && ServerMSG == "Rock")
-            {
-                return "You Lose!";
-            }
-            else if (ClientMsg.Contains("Rock") && ServerMSG == "Paper")
-            {
-                return "You Lose!";
-            }
-            else if (ClientMsg.Contains("Paper") && ServerMSG == "Scisors")
-            {
-                return "You Lose!";
-            }
-            else if(ClientMsg.Contains("Scissors") && ServerMSG == "Paper")
-            {
-                return "You Win!";
-            }
-            else if (ClientMsg.Contains("Paper") && ServerMSG == "Rock")
-            {
-                return "You Win!";
-            }
-            else if (ClientMsg.Contains("Rock") && ServerMSG == "Scissors")
-            {
-                return "You Win!";
-            }
-            else
-            {
-                return "It's a Tie!";
             }
         }
 
