@@ -5,7 +5,7 @@ namespace Client
 {
     internal class GamePlayInput
     {
-        public string Choice()
+        public static string Choice()
         {
             int choice;
             String choiceString;
@@ -20,7 +20,7 @@ namespace Client
                 return "Rock<EOF>";
             else if (choice == 2)
                 return "Paper<EOF>";
-            else if (Choice() == 3)
+            else if (choice == 3)
                 return "Scissors<EOF>";
             else
                 return "Invalid Choice";

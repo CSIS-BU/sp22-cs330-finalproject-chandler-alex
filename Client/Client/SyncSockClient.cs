@@ -75,7 +75,7 @@ namespace Client
             do
             {
                 //Pass in Method from game-play input
-                StartClient();
+                StartClient(GamePlayInput.Choice());
                 Console.WriteLine("Would you like to play again? Type Y to continue playing");
                 input = Console.ReadLine();
 
