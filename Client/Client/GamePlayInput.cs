@@ -20,15 +20,15 @@ namespace Client
 
                 if (choice == 1)
                 {
-                    return "Rock<EOF>";
+                    return "Rock";
                 }
                 else if (choice == 2)
                 {
-                    return "Paper<EOF>";
+                    return "Paper";
                 }
                 else if (choice == 3)
                 {
-                    return "Scissors<EOF>";
+                    return "Scissors";
                 }
                 else
                 {
