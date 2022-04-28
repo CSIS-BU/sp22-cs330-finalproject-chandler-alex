@@ -68,7 +68,7 @@ namespace Client
         {
             string input = "";
 
-            Console.WriteLine("Type in the Server's IP address...");
+            Console.WriteLine("Type in the Server's IPV6 address...");
             ipAddr = Console.ReadLine();
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj": {}
+    "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj": {
+    "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj",
+        "projectUniqueName": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj",
+        "projectPath": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\cweso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cweso\\Documents\\GitHub\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\obj\\",
+        "outputPath": "D:\\School Stuff\\sp22-cs330-finalproject-chandler-alex\\Client\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cweso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
